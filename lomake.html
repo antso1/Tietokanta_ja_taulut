@@ -1,0 +1,49 @@
+HAKUKULOMAKE
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Haku</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<style type="text/css">
+.tg {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .henkilo, .tg .toimipiste, .tg .ostos{font-family:"Arial Black", Gadget, sans-serif !important;}
+</style>
+<table class="Taulu">
+<tr>
+<th class="henkilo">
+<h4>Hae henkilöitä valitusta alueesta</h4>
+<form action="henkilohaku.php" method="GET">
+<select name="henkilot">
+<option value="asiakkaat">asiakkaat</option>
+<option value="tyontekijat">Duunarit</option>
+</select>
+<input type="text" name="query" />
+<input type="submit" value="Hae" />
+</form></th>
+<th class="toimipiste">
+<h4>Hae toimipistettä (kaupunki tai ID)</h4>
+<form action="toimipistehaku.php" method="GET">
+<input type="text" name="query" />
+<input type="submit" value="Hae" />
+</form></th>
+<th class="ostos">
+<h4>Hae ostotapahtumia</h4>
+<form action="ostohaku.php" method="GET" style="float:left;">
+<input type="text" name="query" />
+<input type="submit" value="Hae" />
+</form>
+<br/>
+<h4>Listaa kaikki ostot</h4>
+<form action="ostot.php" method="GET">
+<input type="submit" value="Listaa kaikki" />
+</form>
+</th></th> </tr>
+</table>
+</body>
+</html>
